@@ -1,0 +1,54 @@
+# Environment & secrets
+.env
+
+# Build output (CMake)
+cmake-build-*/
+
+# Compiled binaries
+*.o
+*.a
+*.so
+*.dylib
+
+# IDE (CLion / JetBrains)
+.idea/
+
+# Database runtime files
+*.data
+*.idx
+*.schema
+*.catalog
+
+# REPL history
+.maxql_history
+
+# Generated snapshots
+maxql_snapshot.txt
+
+# Valgrind / profiling output
+massif.out.*
+callgrind.out.*
+perf.data*
+
+# Test data (generated)
+test_data/
+
+# Claude Code local state
+.claude/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Review/planning docs
+REVIEW_PLAN.md
+
+# Tests (disabled for now)
+tests/
+
+# Coverage output
+coverage/
+*.gcda
+*.gcno
+*.gcov
+lcov.info

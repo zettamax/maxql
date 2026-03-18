@@ -1,0 +1,39 @@
+BasedOnStyle: LLVM
+
+# ===== Indentation =====
+IndentWidth: 4          # Use 4 spaces per indentation level
+TabWidth: 4             # Tab width equals indentation width
+UseTab: Never           # Always use spaces, never tabs
+
+# ===== Braces style (K&R) =====
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: true        # newline for functions
+  AfterControlStatement: false  # same line for if/for/while
+  AfterStruct: false
+  AfterEnum: false
+AllowShortBlocksOnASingleLine: Never
+AllowShortIfStatementsOnASingleLine: Never
+
+# ===== Line breaking =====
+ColumnLimit: 120        # Maximum line length before breaking
+BinPackArguments: false # Do not pack function arguments on one line
+BinPackParameters: false
+
+# ===== Alignment =====
+AlignOperands: Align            # Align multi-line binary operators
+AlignAfterOpenBracket: Align    # Align parameters/arguments after '('
+
+# ===== Operators =====
+BreakBeforeBinaryOperators: NonAssignment
+# Break before operators like &&, ||, +, -, but not before '='
+
+# ===== Pointers & references =====
+PointerAlignment: Left  # int* ptr, not int *ptr
+
+# ===== Switch / case =====
+IndentCaseLabels: true  # Indent 'case' labels inside switch
+
+# ===== Comments =====
+ReflowComments: IndentOnly    # Automatically reflow block comments
+
